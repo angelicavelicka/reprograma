@@ -1,0 +1,9 @@
+function quadrado(l, c){
+for(var i = 0; i < l; i++) {
+    var linha = "";
+    for(var j = 0; j < c; j++) {
+        linha = linha + "*";
+    }
+   console.log(i + linha);
+}
+    }
