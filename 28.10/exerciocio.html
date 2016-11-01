@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body{
+            
+            background-image:url("http://www.saintgermain.com.br/wp-content/uploads/2015/02/Bolo-Festa-de-Marta-Rocha.jpg");
+            background-repeat: center;
+        }
+        h1{
+            text-align:center;
+            color:red;
+
+
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        
+        td,
+        th {
+            border: 2px solid purple;
+            text-align: left;
+            padding: 8px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1> Bolos</h1>
+    <table>
+        <th>Sabores</th>
+        <th>DESCRIÇÃO</th>
+        <th>VALOR</th>
+        
+
+        <tr>
+            <td>Brigadeiro</td>
+            <td>pedaço</td>
+            <td>R$ 2,50</td>
+            
+        </tr>
+        <tr>
+            <td>Maracujá</td>
+            <td>pedaço</td>
+            <td>R$2,50</td>
+            
+        </tr>
+        <tr>
+            <td>Beijinho</td>
+            <td>pedaço</td>
+            <td>R$2,50</td>
+            
+        </tr>
+        <tr>
+            <td>Morango</td>
+            <td>pedaço</td>
+            <td>R$2,50</td>
+            
+        </tr>
+       
+    </table>
+
+  
+        <input type="tex" id="nomeproduto">
+        <input type="text" id="valorproduto">
+  
+<button onclick="confirmaproduto();"> Enviar </button>
+<p id="resultado"></p>
+<script>
+    function confirmaproduto () {
+        var confirma = confirm ("Finalizar compra?")
+        
+
+    if (confirma == true) {
+        alert ("Compra finalizada");
+    }else {
+        alert ("Voltar");
+    }
+}
+
+
+</script>
+
+</body>
+</html>

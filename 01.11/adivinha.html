@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link rel="stylesheet" href="exe3.css">
+    <script src="exe3.js"> </script>
+</head>
+
+<body>
+    <div class="game">
+    <p>Vamos jogar?</p>
+
+    <p>Estou pensando em uma letra</p> 
+    <p> Você consegue adivinhar qual é?</p>
+    <input type="text" id="digite">
+    <button onclick="adivinheALetra();">Tente Adinhar!</button>
+    <p id="resultado"></p>
+</div>
+    <script>
+    function adivinheALetra () {
+        var mensagem;
+        var letra = document.getElementById("digite").value;
+       
+       if (letra == "c"){
+           mensagem ="Você acertou! Incrivel! Como você sabia?";
+          } else if (letra == "b" || letra == "d") {mensagem="Quase lá! Tente outra vez!";} else {mensagem ="Não passou nem perto! Tente outra vez";};
+          document.getElementById("resultado").innerHTML = mensagem;
+    };   
+
+    
+</script>
+
+</body>
+
+</html>

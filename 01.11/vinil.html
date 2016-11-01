@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var numeroPensado = 7;
+        
+
+        for(var numeroTentativas = 5; numeroTentativas > 0; numeroTentativas--){
+                          var numeroAdivinhado = prompt("Adivinhe um número de 0 a 10. Você tem " + numeroTentativas +"tentativas");
+
+        if(numeroAdivinhado == numeroPensado){
+        alert("Aeeee!!!!!");
+        break;
+        }
+        
+        else if(numeroTentativas > 0){
+            numeroTentativas--;
+        } else{
+            alert("Game over!!!!");
+        }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
